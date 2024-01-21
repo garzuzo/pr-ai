@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="0" errors="0" time="12.305">
-  <testsuite name="Google test case" errors="0" failures="0" skipped="0" timestamp="2024-01-17T13:02:42" time="5.028" tests="1">
-    <testcase classname="GOOGLE TEST CASE" name="Google test case returns successful search results" time="0.371">
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="23.097">
+  <testsuite name="Google test case" errors="0" failures="0" skipped="0" timestamp="2024-01-21T05:41:31" time="9.03" tests="1">
+    <testcase classname="GOOGLE TEST CASE" name="Google test case returns successful search results" time="4.468">
     </testcase>
   </testsuite>
-  <testsuite name="Google test case" errors="0" failures="0" skipped="0" timestamp="2024-01-17T13:02:47" time="4.381" tests="1">
-    <testcase classname="GOOGLE TEST CASE" name="Google test case returns successful search results" time="0.413">
+  <testsuite name="Google test case" errors="0" failures="0" skipped="0" timestamp="2024-01-21T05:41:40" time="4.361" tests="1">
+    <testcase classname="GOOGLE TEST CASE" name="Google test case returns successful search results" time="2.248">
     </testcase>
   </testsuite>
 </testsuites>

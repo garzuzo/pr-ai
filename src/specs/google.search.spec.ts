@@ -1,17 +1,16 @@
-describe('Google test case', () => {
-
-
- beforeAll(async() => {
-    await page.goto('https://google.com');
- })
- afterAll(async() => {
+import { SearchPage } from "../pages/search-page";
+describe("Google test case", () => {
+  afterAll(async () => {
     await page.close();
- })
- it('returns successful search results', async() => {
+  });
+  it("returns successful search results", async () => {
+    // Arrange
+    const searchPage = new SearchPage(page);
+    await searchPage.goto();
     // Act
-    await page.fill('textarea[aria-label="Buscar"]', "SF");
-    await page.press('textarea[aria-label="Buscar"]', "Enter");
+    await searchPage.searchTextArea.fill("SF");
+    await searchPage.searchTextArea.press("Enter");
     // Assert
-    expect(await page.title()).toBe('SF - Buscar con Google');    
-})   
-})
+    expect(await page.title()).toBe("SF - Buscar con Google");
+  });
+});
